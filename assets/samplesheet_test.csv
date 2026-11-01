@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2
+MCF7_T0_1,test_data/MCF7_T0_1_R1.fastq.gz,test_data/MCF7_T0_1_R2.fastq.gz
+MCF7_DMSO_1,test_data/MCF7_DMSO_1_R1.fastq.gz,test_data/MCF7_DMSO_1_R2.fastq.gz
