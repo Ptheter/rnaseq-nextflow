@@ -1,6 +1,7 @@
 nextflow.enable.dsl = 2
 
 include { FASTQC } from './modules/fastqc.nf'
+include { FASTP  } from './modules/fastp.nf'
 
 workflow {
     reads_ch = channel
@@ -13,4 +14,5 @@ workflow {
         }
 
     FASTQC(reads_ch)
+    FASTP(reads_ch)
 }
