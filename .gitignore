@@ -3,3 +3,4 @@ results/
 .nextflow*
 *.log
 reference/
+results_test/
