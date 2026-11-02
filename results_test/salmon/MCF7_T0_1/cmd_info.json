@@ -1,0 +1,11 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "salmon_index",
+    "libType": "A",
+    "mates1": "MCF7_T0_1_trimmed_R1.fastq.gz",
+    "mates2": "MCF7_T0_1_trimmed_R2.fastq.gz",
+    "validateMappings": [],
+    "threads": "2",
+    "output": "MCF7_T0_1",
+    "auxDir": "aux_info"
+}

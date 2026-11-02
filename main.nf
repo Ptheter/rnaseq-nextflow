@@ -1,7 +1,8 @@
 nextflow.enable.dsl = 2
 
-include { FASTQC } from './modules/fastqc.nf'
-include { FASTP  } from './modules/fastp.nf'
+include { FASTQC                     } from './modules/fastqc.nf'
+include { FASTP                      } from './modules/fastp.nf'
+include { SALMON_INDEX; SALMON_QUANT } from './modules/salmon.nf'
 
 workflow {
     reads_ch = channel
@@ -15,4 +16,7 @@ workflow {
 
     FASTQC(reads_ch)
     FASTP(reads_ch)
+
+    SALMON_INDEX(file(params.transcriptome, checkIfExists: true))
+    SALMON_QUANT(FASTP.out.reads, SALMON_INDEX.out.index)
 }
