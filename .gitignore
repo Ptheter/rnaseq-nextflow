@@ -4,3 +4,5 @@ results/
 *.log
 reference/
 results_test/
+singularity_cache/
+nextflow_*.log
