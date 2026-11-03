@@ -11,7 +11,6 @@ SAMPLESHEET="${1:?samplesheet required}"
 OUTDIR="${2:-results}"
 PROFILE="${NF_PROFILE:-slurm,singularity}"
 
-module purge
 module load miniconda3 nextflow singularity-ce
 export NXF_SINGULARITY_CACHEDIR="$PWD/singularity_cache"
 mkdir -p "$NXF_SINGULARITY_CACHEDIR"
