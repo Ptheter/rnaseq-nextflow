@@ -1,0 +1,9 @@
+Module	Section	Sample Name	Source
+Salmon	all_sections	MCF7_DMSO_1	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/MCF7_DMSO_1/libParams/flenDist.txt
+Salmon	all_sections	MCF7_BKM_1	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/MCF7_BKM_1/libParams/flenDist.txt
+fastp	all_sections	SRR16495890	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/MCF7_DMSO_1.fastp.json
+fastp	all_sections	SRR16495887	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/MCF7_BKM_1.fastp.json
+FastQC	all_sections	SRR16495887_2	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/SRR16495887_2_fastqc.zip
+FastQC	all_sections	SRR16495890_1	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/SRR16495890_1_fastqc.zip
+FastQC	all_sections	SRR16495887_1	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/SRR16495887_1_fastqc.zip
+FastQC	all_sections	SRR16495890_2	/mnt/beegfs/home/xliang41/projects/rnaseq-nextflow/work/21/5218cc5d97d7749b5c299feaad2795/SRR16495890_2_fastqc.zip

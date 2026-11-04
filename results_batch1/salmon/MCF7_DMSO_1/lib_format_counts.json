@@ -1,0 +1,22 @@
+{
+    "read_files": "[ MCF7_DMSO_1_trimmed_R1.fastq.gz, MCF7_DMSO_1_trimmed_R2.fastq.gz]",
+    "expected_format": "ISR",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 31792095,
+    "num_assigned_fragments": 31792095,
+    "num_frags_with_concordant_consistent_mappings": 30366271,
+    "num_frags_with_inconsistent_or_orphan_mappings": 1944259,
+    "strand_mapping_bias": 0.0000025357016918860314,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 77,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 30366271,
+    "SF": 807138,
+    "SR": 1137044,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
