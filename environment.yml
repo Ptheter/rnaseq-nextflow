@@ -1,0 +1,14 @@
+name: rnaseq-r
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - bioconductor-deseq2
+  - bioconductor-tximport
+  - r-pheatmap
+  - r-ggplot2
+  - r-msigdbr
+  - r-base
+  - bioconductor-fgsea
+  - r-readr
+prefix: /home/ptheeter/miniconda3/envs/rnaseq-r
