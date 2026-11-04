@@ -1,9 +1,0 @@
-Sample	salmon-percent_mapped	salmon-num_mapped	salmon-library_types	salmon-compatible_fragment_ratio	salmon-strand_mapping_bias	fastp-pct_duplication	fastp-after_filtering_q30_rate	fastp-after_filtering_q30_bases	fastp-filtering_result_passed_filter_reads	fastp-after_filtering_gc_content	fastp-pct_surviving	fastp-pct_adapter	fastqc-percent_duplicates	fastqc-percent_gc	fastqc-avg_sequence_length	fastqc-median_sequence_length	fastqc-percent_fails	fastqc-total_sequences
-MCF7_BKM_1	90.98367787250206	41.442513	ISR	100.0	2.0370239031092064e-06													
-MCF7_DMSO_1	90.1747203732596	31.792095	ISR	100.0	2.5357016918860312e-06													
-SRR16495887						20.6089	95.2407	8723.590382	91.09878599999999	50.153400000000005	98.83202638622444	3.8286496707309126						
-SRR16495887_1													67.45311483075525	50.0	101.0	101	18.181818181818183	46.087685
-SRR16495887_2													61.51945800262361	50.0	101.0	101	9.090909090909092	46.087685
-SRR16495890						17.0483	94.0994	6679.5203759999995	70.51221199999999	50.5879	98.56142021950033	2.8134873305232864						
-SRR16495890_1													63.779024536476506	50.0	101.0	101	18.181818181818183	35.770696
-SRR16495890_2													56.92631014730706	50.0	101.0	101	9.090909090909092	35.770696

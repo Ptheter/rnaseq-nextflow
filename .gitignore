@@ -7,3 +7,6 @@ results_test/
 singularity_cache/
 nextflow_*.log
 reports/
+results_batch1/
+results_mcf7/
+analysis_mcf7/
