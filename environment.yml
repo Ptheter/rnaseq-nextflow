@@ -11,4 +11,5 @@ dependencies:
   - r-base
   - bioconductor-fgsea
   - r-readr
+  - r-jsonlite
 prefix: /home/ptheeter/miniconda3/envs/rnaseq-r
