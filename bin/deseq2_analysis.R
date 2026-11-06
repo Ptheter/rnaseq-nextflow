@@ -57,7 +57,7 @@ vsd <- vst(dds, blind = TRUE)
 pca <- plotPCA(vsd, intgroup = "condition", returnData = TRUE)
 pct <- round(100 * attr(pca, "percentVar"))
 p_pca <- ggplot(pca, aes(PC1, PC2, color = condition, label = name)) +
-  geom_point(size = 4) + geom_text(vjust = -1, show.legend = FALSE) +
+  geom_point(size = 4) + geom_text(vjust = -1, show.legend = FALSE) + scale_x_continuous(expand = expansion(mult = 0.2)) + scale_y_continuous(expand = expansion(mult = 0.15)) +
   xlab(paste0("PC1: ", pct[1], "% variance")) + ylab(paste0("PC2: ", pct[2], "% variance")) +
   theme_bw() + ggtitle("MCF7: PCA of variance-stabilized counts")
 ggsave(file.path(outdir, "pca.png"), p_pca, width = 6, height = 5, dpi = 150)
