@@ -31,6 +31,12 @@ txi <- tximport(files, type = "salmon", tx2gene = tx2gene[, c("tx", "gene")], dr
 dds <- DESeqDataSetFromTximport(txi, colData = meta[, "condition", drop = FALSE], design = ~ condition)
 keep <- rowSums(counts(dds) >= 10) >= 3   # >=10 counts in at least 3 samples (smallest group size)
 dds <- dds[keep, ]
+excl_f <- get_arg(5, "metadata/excluded_genes.txt")
+if (file.exists(excl_f)) {
+  excl <- readLines(excl_f)
+  dds <- dds[!rownames(dds) %in% excl, ]
+  cat("excluded genes (ambiguous loci):", length(excl), "\n")
+}
 cat("genes kept after filtering:", nrow(dds), "\n")
 
 # ---- differential expression ----
