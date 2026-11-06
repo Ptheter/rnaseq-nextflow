@@ -18,7 +18,7 @@ STAMP=$(date +%Y%m%d_%H%M%S)
 
 nextflow run . -profile "$PROFILE" \
     --input "$SAMPLESHEET" \
-    --transcriptome reference/transcripts.fa.gz \
+    --transcriptome "${TRANSCRIPTOME:-reference/transcripts.fa.gz}" \
     --outdir "$OUTDIR" \
     -with-report   "reports/report_${STAMP}.html" \
     -with-trace    "reports/trace_${STAMP}.txt" \
