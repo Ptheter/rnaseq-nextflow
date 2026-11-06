@@ -10,3 +10,5 @@ reports/
 results_batch1/
 results_mcf7/
 analysis_mcf7/
+analysis_*/
+results_*/
