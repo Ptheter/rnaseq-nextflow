@@ -65,13 +65,13 @@ ggsave(file.path(outdir, "pca.png"), p_pca, width = 6, height = 5, dpi = 150)
 # ---- volcano ----
 v <- res_df[!is.na(res_df$padj), ]
 v$neglogp <- -log10(pmax(v$padj, 1e-300))
-v$sig <- ifelse(v$padj < 0.05 & abs(v$log2FoldChange) >= 1, "padj<0.05 & |log2FC|>=1", "n.s.")
-lab <- v[v$sig != "n.s." & !is.na(v$symbol), ]
+v$sig <- ifelse(v$padj < 0.05 & abs(v$log2FoldChange) >= 1, "padj<0.05 & |log2FC|>=1", "other")
+lab <- v[v$sig != "other" & !is.na(v$symbol), ]
 lab <- head(lab[order(lab$padj), ], 15)
 p_vol <- ggplot(v, aes(log2FoldChange, neglogp, color = sig)) +
   geom_point(alpha = 0.5, size = 1) +
   geom_text(data = lab, aes(label = symbol), size = 3, check_overlap = TRUE, color = "black") +
-  scale_color_manual(values = c("grey60", "firebrick")) +
+  scale_color_manual(values = c("grey60", "firebrick")) + scale_x_continuous(expand = expansion(mult = 0.15)) +
   xlab("log2 fold change (BKM / DMSO)") + ylab("-log10 adjusted p") +
   theme_bw() + ggtitle("MCF7: BKM120 vs DMSO")
 ggsave(file.path(outdir, "volcano.png"), p_vol, width = 7, height = 6, dpi = 150)
